@@ -25,14 +25,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      \Illuminate\Support\Facades\Schema::defaultStringLength(191);
-      if(!User::first()) {
-          $user = new User;
-          $user->name = 'admin';
-          $user->email = 'admin@ed.com';
-          $user->password = Hash::make('password');
-          $user->role = 0;
-          $user->save();
-      }
+    //   \Illuminate\Support\Facades\Schema::defaultStringLength(191);
+    //   if(!User::first()) {
+    //       $user = new User;
+    //       $user->name = 'admin';
+    //       $user->email = 'admin@ed.com';
+    //       $user->password = Hash::make('password');
+    //       $user->role = 0;
+    //       $user->save();
+    //   }
     }
 }
